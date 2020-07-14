@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<DialogPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.maroti.AddNewReminderDialog">
+    <headerText>
+        Add Something here
+    </headerText>
+<content>
+    <GridPane hgap="10" vgap="10" >
+
+        <Label text="Title" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+        <TextField GridPane.rowIndex="0" GridPane.columnIndex="1" fx:id="title"/>
+        <Label text="Description" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+        <TextArea GridPane.rowIndex="1" GridPane.columnIndex="1" fx:id="desc"/>
+        <Label GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+        <DatePicker GridPane.rowIndex="2" GridPane.columnIndex="1" fx:id="deadLine"/>
+
+    </GridPane>
+</content>
+</DialogPane>
